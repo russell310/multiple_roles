@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>Username</th>
+        <th>Subject</th>
+    </tr>
+    {% for c in object_list %}
+        <tr>
+            <td>{{ c.user.username }}</td>
+            <td>{{ c.subject }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
